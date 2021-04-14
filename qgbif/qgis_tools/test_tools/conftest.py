@@ -23,8 +23,8 @@
 import sys
 
 from osgeo import gdal
-from qgis.PyQt import Qt
 from qgis.core import Qgis
+from qgis.PyQt import Qt
 
 
 def pytest_report_header():

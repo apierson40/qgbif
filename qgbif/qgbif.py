@@ -26,7 +26,6 @@ from qgis.PyQt.QtCore import QCoreApplication, QSettings, QTranslator
 from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction
 
-
 from .qgis_tools.utils import interfaces_path
 from .src.qgbif_dialog import QGBIFDialog
 
@@ -176,7 +175,7 @@ class QGBIFPlugin:
 
         # Create the dialog with elements (after translation) and keep reference
         # Only create GUI ONCE in callback, so that it will only load when the plugin is started
-        if self.first_start == True:
+        if self.first_start is True:
             self.first_start = False
             self.dlg = QGBIFDialog()
 

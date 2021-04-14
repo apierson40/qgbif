@@ -1,0 +1,12 @@
+[flake8]
+exclude = qgbif/test
+max-line-length = 100
+
+[isort]
+ensure_newline_before_comments = True
+force_grid_wrap = 0
+include_trailing_comma = True
+line_length = 88
+multi_line_output = 3
+profile = black
+use_parentheses = True
