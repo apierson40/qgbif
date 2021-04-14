@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  qgis:
+    image: qgis/qgis:release-3_10
+    container_name: qgis
+    volumes:
+      - ../${PLUGIN_NAME}:/tests_directory/${PLUGIN_NAME}
+    environment:
+      - DISPLAY=:99
